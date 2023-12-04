@@ -26,7 +26,8 @@ if (isset($_POST['settings'])){
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../images/anisioico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
-
+    <link rel="shortcut icon" href="../images/anisioico.ico" type="image/x-icon">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed</title>
 </head>
@@ -34,9 +35,9 @@ if (isset($_POST['settings'])){
 <body>
     <?php
 if ($saber['imagem_profile'] == "") {
-    echo '<a href="#"><i class="bi bi-person-square" id="profile"></i></a>';
+    echo '<a href="profilepic.php"><i class="bi bi-person-square" id="profile"></i></a>';
 } else {
-    echo '<a href="#"><img src="upload/' . $saber['imagem_profile'] . '" id="profile"></a>';
+    echo '<a href="profilepic.php"><img src="upload/' . $saber['imagem_profile'] . '" id="profile"></a>';
 }
     ?>
     <div id="menu">

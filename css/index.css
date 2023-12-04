@@ -3,6 +3,9 @@ h2 {
   margin-top: 20px;
   color: #fff;
 }
+h2.pedidos{
+  color: #3401cc;
+}
 
 div#publish {
   width: 600px;
@@ -84,7 +87,6 @@ div#menu input[name="remover"] {
 div#menu input[name="cancelar"] {
   margin-right: 40px;
 }
-
 i#profile {
   font-size: 100px;
   display: block;
@@ -144,7 +146,26 @@ div.pub img {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+div.pub input{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #3401cc;
+  color: #fff;
+  width: 100px;
+}
+div.pub input:hover{
+  background-color: #dc1617;
+  cursor: pointer;
+}
+div.pub span.pedidos {
+  text-align: center;
+}
 footer {
+  position: fixed;
+  bottom: 0;
   text-align: center;
   color: #666;
   margin-top: 20px;
@@ -157,6 +178,7 @@ footer i {
   font-size: 25px;
 }
 footer a {
+  
   text-decoration: none;
   color: #3401cc;
 }

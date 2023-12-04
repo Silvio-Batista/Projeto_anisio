@@ -75,7 +75,7 @@ if (isset($_POST['publish'])) {
 
         if ($pub['imagem'] == "") {
             echo '<div class="pub" id="' . $id . '">
-                <p> <a href="profile.php?id='.$id.'">' . $nome . ' </a> - ' . $pub['data'] . '</p>
+                <p> <a href="profile.php?id='.$saber['id'].'">' . $nome . ' </a> - ' . $pub['data'] . '</p>
                 <span>' . $pub['texto'] . '</span>
                 </div>';
         } else {

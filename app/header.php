@@ -6,7 +6,9 @@ include('../database/conexao.php');
 $login_cookie = $_COOKIE['login'];
 if (!isset($login_cookie)) {
     header('Location: login.php');
+    
 }
+// var_dump($login_cookie);
 ?>
 <!DOCTYPE html>
 <html lang="PT-BR">
@@ -25,9 +27,11 @@ if (!isset($login_cookie)) {
 
         <a href="index.php"><img src="../images/logo_anisio1.png" alt="logo anisio"></a>
         <form action="" method="get">
-            <input type="text" placeholder="Buscar por alguém" autocomplete="off"> <input type="submit" value="Buscar" hidden>
+            <input type="text" placeholder="Buscar por alguém" autocomplete="off"> 
+            <input type="submit" value="Buscar" hidden>
         </form>
         <a href="#" style="text-decoration: none;"><i class="bi bi-chat-dots-fill"></i></a>
+        <a href="pedidos.php" style="text-decoration: none;"><i class="bi bi-person-lines-fill"></i></a>
         <a href="myprofile.php"><i id="git" class="bi bi-person-fill"></i></a>
     </div>
    

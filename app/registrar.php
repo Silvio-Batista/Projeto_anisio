@@ -21,7 +21,7 @@ include('../database/conexao.php');
     } else {
         $inserir = $mysqli->query("INSERT INTO users (nome, nick_name, email, password, data) values ('$nome', '$nick', '$email', '$senha', '$data')") or die($mysqli->error);
         if($inserir){
-            setcookie("login", $nick);
+            setcookie("login", $email);
             header('Location: index.php');
             
         } else{
@@ -39,6 +39,7 @@ include('../database/conexao.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../images/anisioico.ico" type="image/x-icon">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
